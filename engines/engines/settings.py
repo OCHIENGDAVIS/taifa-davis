@@ -15,8 +15,8 @@ PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(_
 print(PROJECT_DIR)
 sys.path.append(PROJECT_DIR)
 os.environ['DJANGO_SETTINGS_MODULE'] = 'taifa.settings'
-# import django
-# django.setup()
+import django
+django.setup()
 
 BOT_NAME = 'engines'
 
