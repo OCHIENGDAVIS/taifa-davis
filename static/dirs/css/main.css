@@ -1,0 +1,30 @@
+body{
+    background: #eeeeee;
+}
+.post{
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background: #fff;
+    max-height: 250px;
+}
+.posts h2{
+    padding: 5px;
+}
+.aside-div{
+    background: #fff;
+}
+
+.card-img{
+    max-height: 50px !important;
+    
+}
+.card-custom{
+    margin-top: 20px;
+}
+.aside-div{
+    margin-top: 20px ;
+}
+.custom-cardfooter{
+    display: flex;
+}
