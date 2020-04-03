@@ -57,8 +57,8 @@ CONCURRENT_REQUESTS = 32
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-    # 'scrapy_deltafetch.DeltaFetch': 100,
-    # 'scrapy_magicfields.MagicFieldsMiddleware': 200,
+    'scrapy_deltafetch.DeltaFetch': 100,
+    'scrapy_magicfields.MagicFieldsMiddleware': 200,
    'engines.middlewares.EnginesSpiderMiddleware': 543,
 }
 
@@ -66,12 +66,12 @@ DELTAFETCH_ENABLED = True
 
 MAGICFIELDS_ENABLED = True
 
-# MAGIC_FIELDS = {
-#     "timestamp": "$time",
-#     "spider": "$spider:name",
-#     "url": "scraped from $response:url",
-#     "domain": "$response:url,r'https?://([\w\.]+)/']",
-# }
+MAGIC_FIELDS = {
+    "timestamp": "$time",
+    "spider": "$spider:name",
+    "url": "scraped from $response:url",
+    "domain": "$response:url,r'https?://([\w\.]+)/']",
+}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html

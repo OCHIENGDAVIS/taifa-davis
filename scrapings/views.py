@@ -11,7 +11,6 @@ def home(request):
 
 
 def citizen(request):
-    cleaned_posts = []
     posts = CitizenModel.objects.all()
     context = {
         'title': 'citizen',
