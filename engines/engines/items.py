@@ -10,7 +10,7 @@ from scrapy_djangoitem import DjangoItem
 from scrapings.models import CitizenModel
 
 
-class EnginesItem(scrapy.Item):
+class EnginesItem(DjangoItem):
     django_model = CitizenModel
     # title = scrapy.Field()
     # content = scrapy.Field()
