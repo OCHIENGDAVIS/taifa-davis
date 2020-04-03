@@ -12,7 +12,7 @@ def home(request):
 
 def citizen(request):
     cleaned_posts = []
-    posts = CitizenModel.objects.filter('-id')[:20]
+    posts = CitizenModel.objects.all()
     context = {
         'title': 'citizen',
         'posts': posts,
