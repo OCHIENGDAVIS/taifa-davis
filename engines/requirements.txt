@@ -11,7 +11,7 @@ colorama==0.4.3
 constantly==15.1.0
 cryptography==2.8
 cssselect==1.1.0
-Django==3.0.4
+Django==3.1.13
 docker-py==1.10.6
 docker-pycreds==0.4.0
 hyperlink==19.0.0
